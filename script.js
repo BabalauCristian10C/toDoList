@@ -65,6 +65,5 @@ todoControl.addEventListener('submit', function(event){
         headerInput.value = "";
         localStorage.setItem('toDoData', JSON.stringify(toDoData));
     }
-    
     render();
 });
