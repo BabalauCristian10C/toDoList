@@ -14,7 +14,9 @@ function myGFG() {
         toDoData.push(obj[i]);
     }
 }
-myGFG();
+if (localStorage.getItem('toDoData')){
+    myGFG();
+}
 const render = function (){
     todoListItems.textContent = "";
     todoCompleted.textContent = "";
@@ -51,7 +53,7 @@ const render = function (){
     localStorage.setItem('toDoData', JSON.stringify(toDoData));
 };
 
-if (localStorage.getItem('toDoData').length>1){
+if (localStorage.getItem('toDoData')){
     render();
 }
 
