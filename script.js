@@ -53,7 +53,7 @@ const render = function (){
 
 if (localStorage.getItem('toDoData').length>1){
     render();
-};
+}
 
 todoControl.addEventListener('submit', function(event){
     event.preventDefault();
